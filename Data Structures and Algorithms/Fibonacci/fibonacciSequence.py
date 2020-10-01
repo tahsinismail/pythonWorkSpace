@@ -12,7 +12,7 @@ def fibonacciSequence(n):
             newSequence = sequence[i-1] + sequence[i]
             sequence.append(newSequence)
             
-    #Elapsed time per execution
+    #Elapsed time during execution
     elapsed_time = time.time() - start_time
     
     return "FibonacciSequence: \n\n{}  \n\nexecuted in : {:.7f}".format(sequence, elapsed_time)
@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     while True: 
         try:
-            #Accepting only a postive integer
+            #Accepting only a postive integer number
             input_n = int(input("Enter a postive integer number: ")) 
             assert(input_n  > 0)
             break 
